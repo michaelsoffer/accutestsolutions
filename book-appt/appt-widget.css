@@ -1,0 +1,41 @@
+/* Load Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900|Material+Icons');
+
+/* Button */
+.apptthingbtn-t1 {position:fixed;right:25px;bottom:25px;z-index:9999;}
+.apptthingbtn-t1 .apptthinglnk {display:block;position:relative;padding:0px 22px 0px 52px;border:1px solid transparent;border-radius:32px;background:#0374ff;font-size:18px;color:#fff;line-height:50px;font-weight:700;font-family:Lato,Roboto,Helvetica,Arial,sans-serif;text-decoration:none;font-style:italic;letter-spacing:-.25px;text-shadow:1px 1px 0px rgba(0,0,0,.25);box-shadow:0 0 0 0.5px rgba(50,50,93,.25), 0 2px 5px 0 rgba(50,50,93,.15), 0 1px 1.5px 0 rgba(0,0,0,.15), 0 1px 2px 0 rgba(0,0,0,.15), 0 0 0 0 transparent;}
+.apptthingbtn-t1 .apptthinglnk i {position:absolute;left:14px;top:12px;font-size:28px;color:#fff;}
+.apptthingbtn-t1 .apptthinglnk:hover {filter:brightness(92%);}
+.apptthingbtn-t1 .apptthinglnk:active {border-top:2px solid transparent;border-bottom:0px solid transparent;filter:brightness(96%);}
+
+/* Inline embed */
+.ae-meeting-emd-inline {width:600px;min-width:320px;position:absolute;left:50%;top:20px;z-index:-1;margin:0 auto;padding:0px 0px 40px 0px;display:none;text-align:center;visibility:visible;opacity:0;transform:translateY(0px) scale(0.92,0.92);transition:transform .2s ease-out,opacity .2s ease-out,margin .2s ease-out;}
+.ae-meeting-emd-inline .inlfrm {clear:both;background:rgb(255, 0, 0);overflow:hidden;border-radius:4px;box-shadow:0 7px 14px 0 rgba(50, 50, 93, 0.22), 0 3px 6px 0 rgba(0, 0, 0, 0.15);}
+.ae-meeting-emd-inline.show {z-index:99999;visibility:visible;opacity:1;transform:scale(1) translateY(0px);}
+.ae-meeting-emd-inline-bg {position:fixed;left:0px;top:0px;right:0px;bottom:0px;z-index:-1;background:rgba(255,255,255,0.7);opacity:0;display:none;visibility:hidden;transition:opacity .2s ease-out;}
+.ae-meeting-emd-inline-bg.show {opacity:1;z-index:99998;visibility:visible;}
+.ae-meeting-emd-inline-bg .rl {width:100%;height:100%;position:relative;}
+.ae-meeting-emd-inline-bg .clo {width:50px;height:50px;position:absolute;z-index:1;top:25px;right:25px;}
+.ae-meeting-emd-inline-bg .clo .cl {width:50px;height:50px;position:relative;text-align:center;border-radius:50%;cursor:pointer;}
+.ae-meeting-emd-inline-bg .clo .cl i {font-size:28px;line-height:50px;color:#333;}
+.ae-meeting-emd-inline-bg .clo .cl:hover {background:#f1f3f3;}
+.ae-meeting-emd-inline-bg .clo .cl:hover i {color:#000;}
+.ae-meeting-emd-inline-bg .clo .cl:active {top:1px;background:#eee;}
+.ae-meeting-emd-inline-bg .load-ico {width:70px;height:70px;position:absolute;left:50%;top:50%;z-index:2;margin:-35px 0px 0px -35px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 61.91 61.91'%3E%3Ctitle%3Etest1%3C/title%3E%3Ccircle cx='30.96' cy='30.96' r='30.96' fill='%232d3546'/%3E%3Cpath d='M33.34,43.38H30.13a.67.67,0,0,1-.62-.43l-1.22-3.31a.67.67,0,0,0-.62-.43H19.26a.67.67,0,0,0-.62.43L17.41,43a.65.65,0,0,1-.62.43H13.58a.66.66,0,0,1-.61-.9L21,22.2a.68.68,0,0,1,.62-.42H25.3a.68.68,0,0,1,.62.42l8,20.28A.66.66,0,0,1,33.34,43.38Zm-12.29-7.7h4.83a.66.66,0,0,0,.62-.89l-2.43-6.51a.66.66,0,0,0-1.24,0l-2.4,6.51A.66.66,0,0,0,21.05,35.68Z' fill='%23fff'/%3E%3Cpath d='M39,31.43c0,1.08-.07,1.92-.07,2.52a21.2,21.2,0,0,0,.24,3.63A3.51,3.51,0,0,0,40,39.45a2.1,2.1,0,0,0,1.56.56,3,3,0,0,0,1.23-.32,4.94,4.94,0,0,0,1.29-.84,1.09,1.09,0,0,1,.71-.32.71.71,0,0,1,.63.43,2.2,2.2,0,0,1,.24,1,3.13,3.13,0,0,1-.24,1.2,2.31,2.31,0,0,1-.73,1,5.77,5.77,0,0,1-3.8,1.39A4.77,4.77,0,0,1,36.39,41,13.85,13.85,0,0,1,35,34.3c0-.94,0-1.9.1-2.87H33.81a1.78,1.78,0,0,1-1.3-.35A1.58,1.58,0,0,1,32.17,30c0-1.2.48-1.81,1.45-1.81h1.84a31.32,31.32,0,0,1,1.67-6.48A14.82,14.82,0,0,1,39.86,17a4.64,4.64,0,0,1,3.44-1.74,2.4,2.4,0,0,1,2.12,1.19,5.4,5.4,0,0,1,.78,3A11.3,11.3,0,0,1,42,28.14h3.61a1,1,0,0,1,.74.23,1.19,1.19,0,0,1,.23.84c0,1.48-1.22,2.22-3.65,2.22Zm2.33-11.88a17.89,17.89,0,0,0-1.13,3.35,44.74,44.74,0,0,0-.88,4.76A10.94,10.94,0,0,0,42.18,24a8.82,8.82,0,0,0,1-3.72c0-1.27-.23-1.9-.7-1.9S41.74,18.74,41.34,19.55Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat 50% 50%;background-size:120% auto;border-radius:50%;animation:spring 1.2s;animation-timing-function:ease;animation-iteration-count:infinite;}
+
+/* Logo bounce animation */
+@keyframes spring {0% {transform:scale(1) translateY(0);}10% {transform:scale(1.15,0.7);}30% {transform:scale(0.85,1.08) translateY(-22px);}50% {transform:scale(1) translateY(0);}100% {transform:translateY(0);}}
+
+/* Mobile styles */
+@media only screen and (max-width:660px){
+
+	.ae-meeting-emd-inline {width:96%;left:2%;margin:0px;}
+
+}
+
+/* Mobile styles */
+@media only screen and (max-width:320px){
+
+	.ae-meeting-emd-inline {width:100%;left:0px;margin:0px;}
+
+}
