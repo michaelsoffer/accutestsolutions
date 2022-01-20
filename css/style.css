@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik'); /* rubik font */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+}
+
+/* NAVIGATION BAR STYLE */
+
+.top-nav {
+    font-family: 'Rubik';
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.top-nav a {
+    float: left;
+    color: #333;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: transform 0.5s;
+}
+
+.top-nav a:hover {
+    transform: scale(1.1);
+    color: rgb(90, 90, 90);
+}
+
+.top-nav-right {
+    float: right;
+}
+
+.company-logo {
+    padding-left: 15px;
+    height: 75px;
+    width: 200px;
+}
+
+/* @media (max-width: 600px) {
+    .top-nav {
+        visibility: hidden;
+    }
+} */
+
+/* HOMEPAGE STYLE */
+
+#home-section {
+    background: url("https://www.med-technews.com/downloads/5115/download/covid%20test.png?cb=77364150b490982b8e2df0200aca9dbb&w=640");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    height: 500px;
+}
+
+.schedule-your-test {
+    width: 350px;
+    height: 300px;
+    margin-left: 30px;
+    background: transparent;
+    border: solid;
+    border-color: #333;
+    padding: 20px;
+    margin: 20px;
+}
+
+@media (max-width: 425px) {
+
+    * {width: 100%;}
+
+    .schedule-your-test {
+        width: 100%;
+        height: 350px;
+        margin-left: 30px;
+        background: transparent;
+        border: solid;
+        border-color: #333;
+        padding: 20px;
+        margin: 0px;
+    }
+
+    #home-section {
+        background: url("https://www.med-technews.com/downloads/5115/download/covid%20test.png?cb=77364150b490982b8e2df0200aca9dbb&w=640");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -20rem;
+        padding: 20px;
+        height: 500px;
+    }
+
+    .grid {
+        font-family: Arial, Helvetica, sans-serif;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 30rem;
+        margin: 0 auto;
+        height: 500px;
+        justify-content: center;
+        text-align: center;
+        color: #194084;
+        background-color: #194084;
+    }
+
+    .services-section-cont {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services-section-cont img {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .services-box1 {
+        max-width: 100%;
+    }
+
+}
+
+.schedule-your-test h1 {
+    padding-bottom: 20px;
+}
+
+.schedule-your-test p {
+    color: #000;
+    padding-top: 10px;
+}
+
+.schedule-your-test a {
+    text-decoration: none;
+    color: #000;
+}
+
+.schedule-your-test a:hover {
+    transform: scale(1.1);
+    color: rgb(90, 90, 90);
+}
+
+.schedule-your-test p.dont-wait {
+    padding-bottom: 10px;
+}
+
+.schedule-your-test p.set-up-visit-text {
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    padding-bottom: 5px;
+}
+
+
+/* @media (max-width: 1920px) {
+    .grid {
+        background-color: #c00000;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        height: 250px;
+        justify-content: center;
+    }
+} */
+
+.grid {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 30rem;
+    margin: 0 auto;
+    height: 175px;
+    justify-content: center;
+    text-align: center;
+    color: #194084;
+    background-color: #194084;
+}
+
+.grid h1, p {
+    color: #fff;
+    padding: 1rem 0.5rem 0;
+}
+
+h2 {
+    text-align: center;
+    background-color: yellow;
+}
+
+.grid p {
+    font-size: 1.1rem;
+}
+
+.grid a {
+    text-decoration: underline;
+    text-decoration-color: #fff;
+}
+
+.services-section-cont {
+    display: flex;
+    justify-content: center;
+    border-bottom: thin solid #000;
+    padding-bottom: 40px;
+}
+
+.services-section-cont a {
+    text-decoration-color: #000;
+}
+
+.services-section-cont h1 {
+    color: #000;
+    text-decoration-color: #000;
+    padding-bottom: 1rem;
+    font-size: 40px;
+}
+
+.services-section-cont p {
+    color: #000;
+    padding-bottom: 1rem;
+}
+
+.services-section-cont div.services-box1 {
+    text-align: center;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-section-cont div.services-box1 button.btn {
+    background-color: #c00000;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: solid #c00000;
+}
+
+.services-section-cont div.services-box1 button.btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: solid #c00000;
+}
+
+footer {
+    padding-top: 100px;
+}
+
+/* SERVICES PAGE STYLE */ 
+
+#home-section-services {
+    width: 100%;
+    height: 600px;
+    background: url("https://www.statnews.com/wp-content/uploads/2020/06/GettyImages-1219194646-768x432.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.book-appt {
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.book-appt-box {
+    border-top:  1px solid rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 50px 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.book-appt p {
+    color: #000;
+    font-size: 20px;
+}
+
+.book-appt h1 {
+    font-size: 30px;
+}
+
+.book-appt-box a button {
+    background-color: #194084;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    cursor: pointer;
+    border: 0.5px solid #194084;
+    transition: 0.5s;
+}
+
+.book-appt-box a button:hover {
+    background-color: rgb(128, 128, 128);
+    color: #000;
+    border: 0.5px solid #194084;
+}
+
+.fal-container {
+    position: relative;
+    text-align: center;
+    color: #000;
+}
+
+.fal-container img {
+    opacity: 50%;
+    size: 100% auto;
+}
+
+.fal-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fal-text h1 {
+    padding-bottom: 15px;
+}
+
+.fal-text p {
+    color: #000;
+    padding-bottom: 25px;
+}
+
+.fal-text a button {
+    background-color: #194084;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 400px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: none;
+}
+
+.fal-text a button:hover {
+    background-color: #f2704c;
+    color: #000;
+}
+
+/* CONTACT FORM STYLE */
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=submit] {
+    background-color: #f1785a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 0.5px solid #f1785a;
+}
+
+input[type=submit]:hover {
+    background-color: #fff;
+    color: #000;
+    border: 0.5px solid #f1785a;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+}
