@@ -7,6 +7,10 @@
     font-family: 'Rubik';
 }
 
+@media only screen and (max-width: 500px) {
+    * { width: 100%; }
+}
+
 /* NAVIGATION BAR STYLE */
 
 .top-nav {
@@ -23,7 +27,12 @@
     text-decoration: none;
     font-size: 20px;
     transition: transform 0.5s;
-    width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    .top-nav a {
+        width: 100%;
+    }
 }
 
 .top-nav a:hover {
@@ -67,68 +76,12 @@
     padding: 20px;
     margin: 20px;
 }
-/* 
-@media (max-width: 500px) {
 
-    * {width: 100%;}
-
-    
+@media only screen and (max-width: 500px) {
     .schedule-your-test {
-        width: 100%;
-        height: 350px;
-        margin-left: 30px;
-        background: transparent;
-        border: solid;
-        border-color: #333;
-        padding: 20px;
-        margin: 0px;
+        width: auto;
     }
-
-    #home-section {
-        background: url("https://www.med-technews.com/downloads/5115/download/covid%20test.png?cb=77364150b490982b8e2df0200aca9dbb&w=640");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: -20rem;
-        padding: 20px;
-        height: 500px;
-    }
-
-    .services-section {
-        /* font-family: Arial, Helvetica, sans-serif;
-        display: grid;
-        grid-auto-flow: row;
-        grid-auto-columns: 30rem;
-        margin: 0 auto;
-        height: 500px;
-        justify-content: center;
-        text-align: center;
-        color: #194084;
-        background-color: #194084; */
-        /* display: grid;
-        grid-auto-flow: row;
-        grid-auto-rows: 30rem;
-        height: 195px;
-        text-align: center;
-        background-color: #194084;
-        margin: 0 auto;
-        color: #194084;
-    }
-
-    .services-section-cont {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .services-section-cont img {
-        width: 100%;
-        height: 300px;
-    }
-    
-    .services-box1 {
-        max-width: 100%;
-    }
-
-} */
+}
 
 .apptthingemb {
     padding-left: 10rem;
@@ -163,74 +116,31 @@
     padding-bottom: 5px;
 }
 
-
-/* @media (max-width: 1920px) {
-    .grid {
-        background-color: #c00000;
-        font-family: Arial, Helvetica, sans-serif;
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 auto;
-        height: 250px;
-        justify-content: center;
-    }
-} */
-
 .grid {
-    font-family: Arial, Helvetica, sans-serif;
-    display: grid;
-    grid-auto-flow: row;
-    grid-auto-columns: 30rem;
-    margin: 0 auto;
-    height: 525px;
+    background-color: #194084;
+    color: #fff;
+    display: flex;
     justify-content: center;
     text-align: center;
-    background-color: #194084;
 }
 
-@media only screen and (min-width: 500px) {
-    .grid {
-        font-family: Arial, Helvetica, sans-serif;
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: 30rem;
-        margin: 0 auto;
-        height: 175px;
-        justify-content: center;
-        text-align: center;
-        background-color: #194084;
-        width: 100%;
-    }
-
-    .top-nav a {
-        width: auto;
-    }
-    .top-nav {
-        width: 100%;
-    }
-
-    .book-appt {
-        display: grid;
-        grid-row-gap: 50px;
-        grid-template-columns: auto auto auto;
-        padding: 10px;
-        width: 80%;
-        margin: auto;
-    }
-
-
-    .book-appt-box {
-        border-top:  1px solid rgba(0, 0, 0, 0.8);
-        padding: 50px 20px;
-        font-size: 30px;
-    }
-
-    
+.grid div.service-box {
+    padding: 20px 50px;
+    font-size: 20px;
 }
 
-.grid h1, p {
+.grid div.service-box h1 {
+    padding-bottom: 5px;
+}
+
+.grid a {
     color: #fff;
-    padding: 1rem 0.5rem 0;
+}
+
+@media only screen and (max-width: 500px) {
+    .grid {
+        flex-direction: column;
+    }
 }
 
 h2 {
@@ -238,21 +148,17 @@ h2 {
     background-color: yellow;
 }
 
-.grid p {
-    font-size: 1.1rem;
-}
-
-.grid a {
-    text-decoration: underline;
-    text-decoration-color: #fff;
-}
-
 .services-section-cont {
     display: flex;
     justify-content: center;
     border-bottom: thin solid #000;
     padding-bottom: 40px;
-    
+}
+
+@media only screen and (max-width: 500px) {
+    .services-section-cont {
+        flex-direction: column;
+    }
 }
 
 .services-section-cont a {
@@ -273,11 +179,16 @@ h2 {
 
 .services-section-cont div.services-box1 {
     text-align: center;
-    width: 40rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 500px) {
+    .services-section-cont div.services-box1 {
+        padding-left: 75px;
+    }
 }
 
 .services-section-cont div.services-box1 button.btn {
