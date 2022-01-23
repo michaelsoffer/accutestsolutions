@@ -185,6 +185,10 @@ h2 {
     flex-direction: column;
 }
 
+.services-section-cont div.services-box1 li {
+    padding-bottom: 20px;
+}
+
 @media only screen and (min-width: 500px) {
     .services-section-cont div.services-box1 {
         padding-left: 75px;
@@ -276,6 +280,12 @@ footer {
     size: auto;
 }
 
+@media only screen and (max-width: 500px) {
+    .fal-container img {
+        width: fit-content;
+    }
+}
+
 .fal-text {
     position: absolute;
     top: 50%;
@@ -347,7 +357,6 @@ input[type=submit]:hover {
 .contact-container {
     display: flex;
     justify-content: center;
-    
     border-radius: 5px;
     background-color: #fff;
     padding: 20px;
