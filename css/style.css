@@ -37,8 +37,9 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .top-nav a {
-        width: 100%;
+    .top-nav img.company-logo {
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -49,6 +50,41 @@
 
 .top-nav-right {
     float: right;
+}
+
+.top-nav-right .hamburger-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+    .top-nav a {
+        text-align: right;
+    }
+
+    .top-nav div.top-nav-right a.hamburger-icon {
+        top: 60px;
+        position: fixed;
+    }
+
+    .top-nav-right a { display: none; }
+
+    .top-nav-right a.hamburger-icon {
+        float: right;
+        display: block;
+    }
+
+    .top-nav-right.responsive { position: relative; }
+    .top-nav-right.responsive .hamburger-icon {
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+
+    .top-nav-right.responsive a:not(:last-child) {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
 
 .company-logo {
@@ -252,6 +288,10 @@ footer {
 .book-appt p {
     color: #000;
     font-size: 20px;
+}
+
+.book-appt p.ylw-back {
+    background-color: yellow;
 }
 
 .book-appt h1 {
