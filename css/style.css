@@ -23,7 +23,7 @@
     font-family: 'Rubik';
     overflow: hidden;
     background-color: #fff;
-    padding-top: 60px;
+    padding-top: 0px; /*  make 60px during operation hours */
 }
 
 .top-nav a {
@@ -62,7 +62,7 @@
     }
 
     .top-nav div.top-nav-right a.hamburger-icon {
-        top: 60px;
+        top: 10px; /*  make 60px during operation hours */
         position: fixed;
     }
 
