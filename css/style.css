@@ -194,7 +194,6 @@ h2 {
 .services-section-cont {
     display: flex;
     justify-content: center;
-    border-bottom: thin solid #000;
     padding-bottom: 40px;
 }
 
@@ -254,6 +253,12 @@ h2 {
     background-color: #fff;
     color: #000;
     border: solid #c00000;
+}
+
+.prereg {
+    text-align: center;
+    padding-bottom: 40px;
+    border-bottom: thin solid #000;
 }
 
 footer {
