@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik'); /* rubik font */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+}
+
+@media only screen and (max-width: 500px) {
+    * { width: 100%; }
+}
+
+.attention-text {
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+}
+
+/* NAVIGATION BAR STYLE */
+
+.top-nav {
+    font-family: 'Rubik';
+    overflow: hidden;
+    background-color: #fff;
+    padding-top: 60px; /*  make 60px during operation hours */
+}
+
+.top-nav a {
+    float: left;
+    color: #333;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: transform 0.5s;
+}
+
+@media only screen and (max-width: 500px) {
+    .top-nav img.company-logo {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.top-nav a:hover {
+    transform: scale(1.1);
+    color: rgb(90, 90, 90);
+}
+
+.top-nav-right {
+    float: right;
+}
+
+.top-nav-right .hamburger-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+    .top-nav a {
+        text-align: right;
+    }
+
+    .top-nav div.top-nav-right a.hamburger-icon {
+        top: 60px; /*  make 60px during operation hours */
+        position: fixed;
+    }
+
+    .top-nav-right a { display: none; }
+
+    .top-nav-right a.hamburger-icon {
+        float: right;
+        display: block;
+    }
+
+    .top-nav-right.responsive { position: relative; }
+    .top-nav-right.responsive .hamburger-icon {
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+
+    .top-nav-right.responsive a:not(:last-child) {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.company-logo {
+    padding-left: 15px;
+    height: 75px;
+    width: 200px;
+}
+
+/* @media (max-width: 600px) {
+    .top-nav {
+        visibility: hidden;
+    }
+} */
+
+/* HOMEPAGE STYLE */
+
+#home-section {
+    background: url("https://www.med-technews.com/downloads/5115/download/covid%20test.png?cb=77364150b490982b8e2df0200aca9dbb&w=640");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    height: 500px;
+}
+
+.schedule-your-test {
+    width: 350px;
+    height: 300px;
+    margin-left: 30px;
+    background: transparent;
+    border: solid;
+    border-color: #333;
+    padding: 20px;
+    margin: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+    .schedule-your-test {
+        width: auto;
+    }
+}
+
+.apptthingemb {
+    padding-left: 10rem;
+}
+
+.schedule-your-test h1 {
+    padding-bottom: 20px;
+}
+
+.schedule-your-test p {
+    color: #000;
+    padding-top: 10px;
+}
+
+.schedule-your-test a {
+    text-decoration: none;
+    color: #000;
+}
+
+.schedule-your-test a:hover {
+    transform: scale(1.1);
+    color: rgb(90, 90, 90);
+}
+
+.schedule-your-test p.dont-wait {
+    padding-bottom: 10px;
+}
+
+.schedule-your-test p.set-up-visit-text {
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    padding-bottom: 5px;
+}
+
+.grid {
+    background-color: #194084;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.grid div.service-box {
+    padding: 20px 50px;
+    font-size: 20px;
+}
+
+.grid div.service-box h1 {
+    padding-bottom: 5px;
+}
+
+.grid a {
+    color: #fff;
+}
+
+@media only screen and (max-width: 500px) {
+    .grid {
+        flex-direction: column;
+    }
+}
+
+h2 {
+    text-align: center;
+    background-color: yellow;
+}
+
+.services-section-cont {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+@media only screen and (max-width: 500px) {
+    .services-section-cont {
+        flex-direction: column;
+    }
+}
+
+.services-section-cont a {
+    text-decoration-color: #000;
+}
+
+.services-section-cont h1 {
+    color: #000;
+    text-decoration-color: #000;
+    padding-bottom: 1rem;
+    font-size: 40px;
+}
+
+.services-section-cont p {
+    color: #000;
+    padding-bottom: 1rem;
+}
+
+.services-section-cont div.services-box1 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.services-section-cont div.services-box1 li {
+    padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 500px) {
+    .services-section-cont div.services-box1 {
+        padding-left: 75px;
+    }
+}
+
+.services-section-cont div.services-box1 button.btn {
+    background-color: #c00000;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: solid #c00000;
+}
+
+.services-section-cont div.services-box1 button.btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: solid #c00000;
+}
+
+.prereg {
+    text-align: center;
+    padding-bottom: 40px;
+    border-bottom: thin solid #000;
+}
+
+footer {
+    padding-top: 100px;
+}
+
+/* SERVICES PAGE STYLE */ 
+
+#home-section-services {
+    width: 100%;
+    height: 600px;
+    background: url("https://www.statnews.com/wp-content/uploads/2020/06/GettyImages-1219194646-768x432.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.book-appt {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.book-appt-box {
+    text-align: center;
+    padding: 20px 50px;
+    font-size: 30px;
+}
+
+.book-appt p {
+    color: #000;
+    font-size: 20px;
+}
+
+.book-appt p.ylw-back {
+    background-color: yellow;
+}
+
+.book-appt h1 {
+    font-size: 30px;
+}
+
+.book-appt-box a button {
+    background-color: #194084;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    cursor: pointer;
+    border: 0.5px solid #194084;
+    transition: 0.5s;
+}
+
+.book-appt-box a button:hover {
+    background-color: rgb(128, 128, 128);
+    color: #000;
+    border: 0.5px solid #194084;
+}
+
+.fal-container {
+    position: relative;
+    text-align: center;
+    color: #000;
+}
+
+.fal-container img {
+    opacity: 50%;
+    size: auto;
+}
+
+@media only screen and (max-width: 500px) {
+    .fal-container img {
+        width: fit-content;
+    }
+}
+
+.fal-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ddd;
+    padding: 20px;
+}
+
+.fal-text p {
+    background-color: #ddd;
+}
+
+.fal-text h1 {
+    padding-bottom: 15px;
+}
+
+.fal-text p {
+    color: #000;
+    padding-bottom: 25px;
+}
+
+.fal-text a button {
+    background-color: #194084;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 400px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: none;
+}
+
+.fal-text a button:hover {
+    background-color: #f2704c;
+    color: #000;
+}
+
+/* CONTACT FORM STYLE */
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=submit] {
+    background-color: #f1785a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 0.5px solid #f1785a;
+}
+
+input[type=submit]:hover {
+    background-color: #fff;
+    color: #000;
+    border: 0.5px solid #f1785a;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+}
