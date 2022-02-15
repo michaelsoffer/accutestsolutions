@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link rel="shortcut icon" href="../acculogo.jpg"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <title>Home | AccuTest Solutions</title>
+</head>
+<body>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            if ($(window).width() <= 768) {
+                $(".heading").remove();
+                $("#acculogo").removeClass("col-xs-4");
+            }
+        });
+    </script>
+
+    <div class="container-fluid">
+        <div class="fixed-top row bg-success">
+            <div class="col-xs-4 heading"><h1 class="text-center" style="font-family: 'Segoe UI'; font-size: 20px;">SAME DAY APPOINTMENTS AVAILABLE! SEE <a href="#" class="text-info">HOURS OF AVAILABILITY</a></h1></div>
+            <div id="acculogo" class="col-xs-4"><a href="#"><img class= "center-block img-responsive" src="../output-onlinejpgtools.png" alt="AccuTest logo" style="width: 200px; height: 100px;"></a></div>
+            <div class="col-xs-4 heading"><h1 class="text-center" style="font-family: 'Segoe UI'; font-size: 20px;">Contact us at (702) 850-3136</h1></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
