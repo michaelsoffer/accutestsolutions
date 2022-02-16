@@ -22,15 +22,31 @@
             if ($(window).width() <= 768) {
                 $(".heading").remove();
                 $("#acculogo").removeClass("col-xs-4");
+
+                // $("#home-btns").removeClass("row text-center");
+                // $("#btn-1").removeClass("col-xs-4 btn btn-block");
+                // $("#btn-2").removeClass("col-xs-4 btn btn-block");
+                // $("#btn-3").removeClass("col-xs-4 btn btn-block");
             }
         });
     </script>
 
     <div class="container-fluid">
-        <div class="fixed-top row bg-success">
+        <div id="header" class="fixed-top row bg-success">
             <div class="col-xs-4 heading"><h1 class="text-center" style="font-family: 'Segoe UI'; font-size: 20px;">SAME DAY APPOINTMENTS AVAILABLE! SEE <a href="#" class="text-info">HOURS OF AVAILABILITY</a></h1></div>
             <div id="acculogo" class="col-xs-4"><a href="#"><img class= "center-block img-responsive" src="../output-onlinejpgtools.png" alt="AccuTest logo" style="width: 200px; height: 100px;"></a></div>
             <div class="col-xs-4 heading"><h1 class="text-center" style="font-family: 'Segoe UI'; font-size: 20px;">Contact us at (702) 850-3136</h1></div>
+        </div>
+        <div style="background-color: #f1f4f8;" class="row">
+            <div class="row">
+                <h1 class="text-center" style="font-size: 20px;"><strong>Offering FDA EAU COVID-19 PCR Test with Results in 1 Hour or Less / at-home and at-work COVID-19 PCR Testing</strong></h1>
+            </div>
+            
+            <div id="home-btns" class="row text-center">
+                <div id="btn-1" class="col-sm-4"><button class="btn btn-success btn-block">In-Person On-Site Testing at one of our locations</button></div>
+                <div id="btn-2" class="col-sm-4"><button class="btn btn-success btn-block">COVID-19 testing in the privacy of your home</button></div>
+                <div id="btn-3" class="col-sm-4"><button class="btn btn-success btn-block">COVID-19 testing brought to your business</button></div>
+            </div>
         </div>
     </div>
 
