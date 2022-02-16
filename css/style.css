@@ -282,8 +282,12 @@ footer {
 
 .book-appt-box {
     text-align: center;
-    padding: 20px 50px;
+    padding: 0px 50px;
     font-size: 30px;
+}
+
+.book-appt-box h1 {
+    padding-top: 40px;
 }
 
 .book-appt p {
